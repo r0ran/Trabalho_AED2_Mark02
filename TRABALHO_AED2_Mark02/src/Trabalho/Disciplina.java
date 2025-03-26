@@ -1,22 +1,30 @@
 package Trabalho;
 
 public class Disciplina {
+    private int codigoDisciplina;
     private String nome;
-    private String codigo;
+    private float notaMinima;
 
-    public Disciplina(String nome, String codigo) {
+    public Disciplina(int codigoDisciplina, String nome, float notaMinima) {
+        this.codigoDisciplina = codigoDisciplina;
         this.nome = nome;
-        this.codigo = codigo;
+        this.notaMinima = notaMinima;
     }
+
+    public int getCodigoDisciplina() {
+        return codigoDisciplina;
+    }
+
     public String getNome() {
         return nome;
     }
 
-    public String getCodigo() {
-        return codigo;
+    public float getNotaMinima() {
+        return notaMinima;
     }
-
+    
     public String toString() {
-        return "Disciplina: " + nome + ", Código: " + codigo;
+        return "Disciplina [Código: " + codigoDisciplina + ", Nome: " + nome +
+               ", Nota Mínima: " + notaMinima + "]";
     }
 }

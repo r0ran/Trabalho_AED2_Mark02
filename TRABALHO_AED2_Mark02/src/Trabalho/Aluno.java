@@ -1,28 +1,29 @@
 package Trabalho;
 
 public class Aluno {
-	private String nome;
     private int matricula;
-    private String curso;
+    private String nome;
+    private int idade;
 
-    public Aluno(String nome, int matricula, String curso) {
-        this.nome = nome;
+    public Aluno(int matricula, String nome, int idade) {
         this.matricula = matricula;
-        this.curso = curso;
-    }
-    public String getNome() {
-        return nome;
+        this.nome = nome;
+        this.idade = idade;
     }
 
     public int getMatricula() {
         return matricula;
     }
 
-    public String getCurso() {
-        return curso;
+    public String getNome() {
+        return nome;
     }
- 
-    public String toString() {    // isso serve pra exibir uma representação legível do objeto(n sei se vamos usar mas ta aí)
-        return "Aluno: " + nome + ", Matrícula: " + matricula + ", Curso: " + curso;
+
+    public int getIdade() {
+        return idade;
+    }
+
+    public String toString() {
+        return "Aluno [Matrícula: " + matricula + ", Nome: " + nome + ", Idade: " + idade + "]";
     }
 }
